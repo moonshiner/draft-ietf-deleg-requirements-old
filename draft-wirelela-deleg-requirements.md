@@ -1,16 +1,19 @@
-﻿---
+---
+title: "Problem Statement and Requirements for an Improved DNS Delegation Mechanism abbrev: DNS DELEG Requirements"
+abbrev: "DELEG Requirements "
+category: info
+
+docname: draft-wirelela-deleg-requirements-latest
+submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
+keyword: Internet-Draft
 stand_alone: true
 ipr: trust200902
 cat: info
 submissiontype: IETF
 area: Internet
-wg: Internet Engineering Task Force
+wg: DELEG Working Group
 
 
-docname: draft-wirelela-deleg-requirements-00
-
-
-title: Problem Statement and Requirements for an Improved DNS Delegation Mechanism abbrev: DNS DELEG Requirements
 lang: en
 kw:
   - dns
@@ -77,7 +80,7 @@ Service Access Point
 # Requirements Framework
 
 
-The requirements constraining any proposed changes to DNS delegations fall broadly into two categories.  
+The requirements constraining any proposed changes to DNS delegations fall broadly into two categories.
 
 
 "Hard requirements" are those that must be followed by a successful protocol {{?RFC5218}}, because violating them would present too much of an obstacle for broad adoption.  These will primarily be related to the way the existing Domain Name System functions at all levels.
@@ -100,7 +103,7 @@ The following strictures are necessary in a new delegation design.
 * DELEG must not change current namespace semantics. The nameserver (NS) record type will continue to define the delegation of authority between a parent zone and a child zone exactly as it has for decades.
 
 
-* DELEG must not negatively impact most DNS software.  This is intentionally a bit vague with regard to "most", because it can't be absolutely guaranteed for all possible DNS software on the network.  However, the working group should strive to test any proposed mechanism against a wide range of legacy software and come to a consensus as to what constitutes adherence to this requirement. 
+* DELEG must not negatively impact most DNS software.  This is intentionally a bit vague with regard to "most", because it can't be absolutely guaranteed for all possible DNS software on the network.  However, the working group should strive to test any proposed mechanism against a wide range of legacy software and come to a consensus as to what constitutes adherence to this requirement.
 
 
 * DELEG must be able to secure delegations with DNSSEC.  Ideally it should be able to convey an even stronger security model for delegations than currently exists.
@@ -111,11 +114,11 @@ The following strictures are necessary in a new delegation design.
 ## Soft Requirements
 
 
-The following items are the aspirational goals for this work, describing the features that are desired beyond what current NS-based delegations provide.  
+The following items are the aspirational goals for this work, describing the features that are desired beyond what current NS-based delegations provide.
 * DELEG should facilitate the use of new DNS transport mechanisms, including those already defined by DNS-over-TLS (DoT {{?RFC7858}}), DNS-over-HTTPS (DoH {{?RFC8484}}), and DNS-over-QUIC (DoQ {{?RFC9520}}).  It should easily allow the adoption of new transport mechanisms.
 
 
-* DELEG should make clear all of the necessary details for contacting a Service Access Point – its protocol, port, and any other data that would be required to initiate a DNS query.
+* DELEG should make clear all of the necessary details for contacting a Service Access Point  its protocol, port, and any other data that would be required to initiate a DNS query.
 
 
 * DELEG should minimize transaction cost in its usage.  This includes, but is not limited to, packet count, packet volume, and the amount of time it takes to resolve a query.
@@ -127,7 +130,7 @@ The following items are the aspirational goals for this work, describing the fea
 * DELEG should allow for backward compatibility to the conventional NS-based delegation mechanism.  That is, a Zone Operator who wants to maintain a single source of truth of delegation information using DELEG should be able to easily have Do53 delegations derived from it.
 
 
-* DELEG should be easily extensible, much like Extension Mechanisms for DNS {{?RFC6891}}, allowing for the incremental addition of new parameters without needing all of the heavy lifting that is expected for the initial deployment. 
+* DELEG should be easily extensible, much like Extension Mechanisms for DNS {{?RFC6891}}, allowing for the incremental addition of new parameters without needing all of the heavy lifting that is expected for the initial deployment.
 
 
 * DELEG should support an in-band means for the child to signal to the parent that parent-side records related to the child should be updated, akin to CDS/CDNSKEY {{?RFC8078}}.
