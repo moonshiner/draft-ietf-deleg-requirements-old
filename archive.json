@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-14T00:18:51.358993+00:00",
+  "timestamp": "2024-07-16T00:16:57.460237+00:00",
   "repo": "moonshiner/draft-wirelela-deleg-requirements",
   "labels": [
     {
@@ -62,9 +62,17 @@
       "labels": [],
       "body": "*  DELEG should allow for backward compatibility to the conventional NS-based delegation mechanism. \r\n\r\nI believe that should be a hard requirement. In fact, I think it should be the first hard requirement.",
       "createdAt": "2024-07-12T16:00:26Z",
-      "updatedAt": "2024-07-12T16:00:26Z",
+      "updatedAt": "2024-07-14T16:15:45Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "moonshiner",
+          "authorAssociation": "OWNER",
+          "body": "\"DELEG may enhance existing namespace semantics, but only in ways that are backward compatible\"",
+          "createdAt": "2024-07-14T16:15:43Z",
+          "updatedAt": "2024-07-14T16:15:43Z"
+        }
+      ]
     },
     {
       "number": 2,
