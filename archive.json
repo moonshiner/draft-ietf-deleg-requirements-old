@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-21T00:18:27.951332+00:00",
+  "timestamp": "2024-07-23T00:17:17.610618+00:00",
   "repo": "moonshiner/draft-wirelela-deleg-requirements",
   "labels": [
     {
@@ -53,7 +53,7 @@
     {
       "number": 1,
       "id": "I_kwDOMVhQTs6PZ1pe",
-      "title": "From Paul Hofmann",
+      "title": "\"backward compatibility to the conventional NS-based delegation \"",
       "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/1",
       "state": "OPEN",
       "author": "moonshiner",
@@ -62,7 +62,7 @@
       "labels": [],
       "body": "*  DELEG should allow for backward compatibility to the conventional NS-based delegation mechanism. \r\n\r\nI believe that should be a hard requirement. In fact, I think it should be the first hard requirement.",
       "createdAt": "2024-07-12T16:00:26Z",
-      "updatedAt": "2024-07-14T16:15:45Z",
+      "updatedAt": "2024-07-22T20:57:20Z",
       "closedAt": null,
       "comments": [
         {
@@ -71,13 +71,20 @@
           "body": "\"DELEG may enhance existing namespace semantics, but only in ways that are backward compatible\"",
           "createdAt": "2024-07-14T16:15:43Z",
           "updatedAt": "2024-07-14T16:15:43Z"
+        },
+        {
+          "author": "vttale",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Between the wording proposed for the hard requirement in Issue #2 (or something similar) and the rest of that bullet item saying that this soft requirement was about being able to derive NS records from DELEG information, I think this is covered.",
+          "createdAt": "2024-07-22T20:56:42Z",
+          "updatedAt": "2024-07-22T20:56:42Z"
         }
       ]
     },
     {
       "number": 2,
       "id": "I_kwDOMVhQTs6PaN2p",
-      "title": "From ted hardie",
+      "title": "\"current namespace semantics\"",
       "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/2",
       "state": "OPEN",
       "author": "moonshiner",
@@ -86,7 +93,130 @@
       "labels": [],
       "body": "  Perhaps a hard requirement of:\r\n\r\nThe nameserver (NS) record type will continue to define the delegation of authority between a parent zone and a child zone with the existing semantics.\r\n\r\nand a soft of\r\n\r\nDELEG may enhance existing namespace semantics, but only in ways that are backward compatible.\r\n",
       "createdAt": "2024-07-12T17:11:36Z",
-      "updatedAt": "2024-07-12T17:11:36Z",
+      "updatedAt": "2024-07-22T20:53:31Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "vttale",
+          "authorAssociation": "COLLABORATOR",
+          "body": "\r\nProposed:\r\nDELEG must be backwards compatible with the existing ecosystem. Legacy zone data must function identically with both DELEG-aware and DELEG-unaware software. Nameserver(NS)records will continue to define the delegation of authority between a parent zone and a child zone exactly as they have.\r\n",
+          "createdAt": "2024-07-22T20:53:30Z",
+          "updatedAt": "2024-07-22T20:53:30Z"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "id": "I_kwDOMVhQTs6Qdo64",
+      "title": "Must support multiple operators",
+      "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/3",
+      "state": "OPEN",
+      "author": "moonshiner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "\r\n\r\nThis may be a hard requirement that it must be possible to transition a domain between domain operators.\r\n\r\nThis may be a soft requirement to allow multiple simultaneous operators for a domain (eg, think what drives multi-provider DNSSEC as well as large enterprises that require vendor diversity for their authoritative zones).\r\n\r\n",
+      "createdAt": "2024-07-22T20:11:46Z",
+      "updatedAt": "2024-07-22T20:52:18Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "enygren",
+          "authorAssociation": "NONE",
+          "body": "It sounds like this a single new hard requirement should be added here, along the lines of:\r\n\r\n* DELEG MUST enable a zone to simultaneously have multiple independent operators.\r\n\r\n(wordsmithing is most welcome)",
+          "createdAt": "2024-07-22T20:23:04Z",
+          "updatedAt": "2024-07-22T20:23:04Z"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "id": "I_kwDOMVhQTs6Qd6fY",
+      "title": "\"enable a DNS operator to manage DNS service more completely on behalf of registrants\"",
+      "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/4",
+      "state": "OPEN",
+      "author": "vttale",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Discussion in the chat during the deleg meeting suggested that maybe this was a little too meta about just what was meant, but it also wasn't clear that the actual content of the document was being replied to.  But maybe add another phrase at also being able to support operators being able to update the names of nameserver targets.\r\n",
+      "createdAt": "2024-07-22T20:59:09Z",
+      "updatedAt": "2024-07-22T23:44:56Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "vttale",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Proposed:\r\n   DELEG should enable a DNS operator to manage DNS service more\r\n   completely on behalf of domain administrators. For example, DELEG\r\n   could address long-standing issues of DNSSEC record maintenance\r\n   that now often depend on registrant / registrar interaction.\r\n   Similarly, DELEG could allow new transports to be deployed by an\r\n   operator or nameserver names to be changed, without necessitating\r\n   that delegation information be modified by the domain administrator.",
+          "createdAt": "2024-07-22T22:56:03Z",
+          "updatedAt": "2024-07-22T22:56:03Z"
+        },
+        {
+          "author": "enygren",
+          "authorAssociation": "NONE",
+          "body": "Makes sense to me.",
+          "createdAt": "2024-07-22T23:04:50Z",
+          "updatedAt": "2024-07-22T23:04:50Z"
+        },
+        {
+          "author": "moonshiner",
+          "authorAssociation": "OWNER",
+          "body": "Is this hard or soft requirement?  ",
+          "createdAt": "2024-07-22T23:07:38Z",
+          "updatedAt": "2024-07-22T23:07:38Z"
+        },
+        {
+          "author": "enygren",
+          "authorAssociation": "NONE",
+          "body": "I think a hard requirement as otherwise it is a substantial regression\r\nrelative to today.\r\n\r\n\r\nOn Mon, Jul 22, 2024 at 4:08\u202fPM Tim Wicinski ***@***.***>\r\nwrote:\r\n\r\n> Is this hard or soft requirement?\r\n>\r\n> \u2014\r\n> Reply to this email directly, view it on GitHub\r\n> <https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/4#issuecomment-2243959359>,\r\n> or unsubscribe\r\n> <https://github.com/notifications/unsubscribe-auth/ABUGCZRDXC6D45DQBJ3NVWLZNWGFDAVCNFSM6AAAAABLJCAZQ2VHI2DSMVQWIX3LMV43OSLTON2WKQ3PNVWWK3TUHMZDENBTHE2TSMZVHE>\r\n> .\r\n> You are receiving this because you commented.Message ID:\r\n> ***@***.***\r\n> com>\r\n>\r\n",
+          "createdAt": "2024-07-22T23:25:54Z",
+          "updatedAt": "2024-07-22T23:25:54Z"
+        },
+        {
+          "author": "moonshiner",
+          "authorAssociation": "OWNER",
+          "body": "agreed it should be a hard requirement.  just wanting it called out. ",
+          "createdAt": "2024-07-22T23:32:18Z",
+          "updatedAt": "2024-07-22T23:32:18Z"
+        },
+        {
+          "author": "vttale",
+          "authorAssociation": "COLLABORATOR",
+          "body": "This comes from soft requirements because it is attempting to solve one of the existing problems.  It isn't a regression to not address it; it is the status quo to not address it.  (This is separate from the multiple operators issue, which is a hard requirement and would be a regression.)",
+          "createdAt": "2024-07-22T23:44:55Z",
+          "updatedAt": "2024-07-22T23:44:55Z"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "id": "I_kwDOMVhQTs6QeFDe",
+      "title": "address deployability",
+      "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/5",
+      "state": "OPEN",
+      "author": "vttale",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "At the meeting, some text on deployability was desired.  Especially to not require any sort of flag day.",
+      "createdAt": "2024-07-22T21:30:51Z",
+      "updatedAt": "2024-07-22T21:30:51Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 6,
+      "id": "I_kwDOMVhQTs6QeFnQ",
+      "title": "will NS be forever required or aim to be eventually dead",
+      "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/6",
+      "state": "OPEN",
+      "author": "vttale",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Maybe we need a section on \"not a requirement\" that this be addressed; that current work cannot really address whether future NS use is either mandatory not intended to be obsoleted",
+      "createdAt": "2024-07-22T21:32:37Z",
+      "updatedAt": "2024-07-22T21:32:37Z",
       "closedAt": null,
       "comments": []
     }
