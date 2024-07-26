@@ -29,6 +29,7 @@ author:
 - name: Jim Reid
   email: jim@rfc1035.com
 - name: Tim Wicinski
+  org: Cox Communications
   email: tjw.ietf@gmail.com
 
 
