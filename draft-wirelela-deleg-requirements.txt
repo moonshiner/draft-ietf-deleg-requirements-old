@@ -181,12 +181,13 @@ Table of Contents
       the amount of time it takes to resolve a query.
 
    *  DELEG should enable a DNS operator to manage DNS service more
-      completely on behalf of registrants.  For example, DELEG could
-      address long-standing issues of DNSSEC record maintenance that now
-      often depend on registrant/registrar interaction.  Similarly,
-      DELEG could allow new transports to be deployed by an operator
-      without necessitating that delegation information be modified by
-      the registrant.
+      completely on behalf of domain administrators.  For example, DELEG
+      could address long-standing issues of DNSSEC record maintenance
+      that now often depend on registrant / registrar interaction.
+      Similarly, DELEG could allow new transports to be deployed by an
+      operator or nameserver names to be changed, without necessitating
+      that delegation information be modified by the domain
+      administrator.
 
    *  DELEG should allow for backward compatibility to the conventional
       NS-based delegation mechanism.  That is, a Zone Operator who wants
