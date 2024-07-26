@@ -4,7 +4,7 @@ This is the working area for the individual Internet-Draft, "Problem Statement a
 
 * [Editor's Copy](https://moonshiner.github.io/draft-wirelela-deleg-requirements/)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-wirelela-deleg-requirements/)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-wirelela-deleg-requirements/))
+* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-wirelela-deleg-requirements/)
 * [Compare Editor's Copy to Individual Draft](https://moonshiner.github.io/draft-wirelela-deleg-requirements/#go.draft-todo-yourname-protocol.diff)
 
 
