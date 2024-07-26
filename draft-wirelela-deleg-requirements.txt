@@ -164,8 +164,8 @@ Table of Contents
       take the same amount of time (eg, controlled by a DNS TTL) and
       allow a smooth transition between different operational platforms.
 
-   *  DELEG must allow multiple independent operators to simultaneously
-      serve a zone.
+   *  DELEG must be incrementally deployable and not require any sort of
+      flag day of universal change to be effective.
 
 3.2.  Soft Requirements
 
