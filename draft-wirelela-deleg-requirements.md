@@ -55,10 +55,6 @@ Various mechanisms have been proposed for communicating additional information a
 
 # Terminology
 
-
-{::boilerplate bcp14}
-
-
 This document assumes familiarity with DNS terms as defined in {{?BCP219}}.    Additionally, the following new terms are introduced:
 
 
@@ -118,7 +114,7 @@ The following items are the aspirational goals for this work, describing the fea
 * DELEG should facilitate the use of new DNS transport mechanisms, including those already defined by DNS-over-TLS (DoT {{?RFC7858}}), DNS-over-HTTPS (DoH {{?RFC8484}}), and DNS-over-QUIC (DoQ {{?RFC9520}}).  It should easily allow the adoption of new transport mechanisms.
 
 
-* DELEG should make clear all of the necessary details for contacting a Service Access Point  its protocol, port, and any other data that would be required to initiate a DNS query.
+* DELEG should make clear all of the necessary details for contacting a Service Access Point -- its protocol, port, and any other data that would be required to initiate a DNS query.
 
 
 * DELEG should minimize transaction cost in its usage.  This includes, but is not limited to, packet count, packet volume, and the amount of time it takes to resolve a query.
