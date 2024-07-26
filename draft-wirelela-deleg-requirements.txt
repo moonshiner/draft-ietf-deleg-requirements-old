@@ -142,7 +142,7 @@ Table of Contents
 
    *  DELEG must be backwards compatible with the existing ecosystem.
       Legacy zone data must function identically with both DELEG-aware
-      and DELEG-unaware software.  Nameserver(NS)records will continue
+      and DELEG-unaware software.  Nameserver (NS) records will continue
       to define the delegation of authority between a parent zone and a
       child zone exactly as they have.
 
