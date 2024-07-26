@@ -95,9 +95,7 @@ The following strictures are necessary in a new delegation design.
 
 * DELEG must not disrupt the existing registration model of domains.  Reservation of a name at a registry will still use the relevant registrar system to indicate the authorized registrant.
 
-
-* DELEG must not change current namespace semantics. The nameserver (NS) record type will continue to define the delegation of authority between a parent zone and a child zone exactly as it has for decades.
-
+* DELEG must be backwards compatible with the existing ecosystem. Legacy zone data must function identically with both DELEG-aware and DELEG-unaware software. Nameserver(NS)records will continue to define the delegation of authority between a parent zone and a child zone exactly as they have.
 
 * DELEG must not negatively impact most DNS software.  This is intentionally a bit vague with regard to "most", because it can't be absolutely guaranteed for all possible DNS software on the network.  However, the working group should strive to test any proposed mechanism against a wide range of legacy software and come to a consensus as to what constitutes adherence to this requirement.
 
