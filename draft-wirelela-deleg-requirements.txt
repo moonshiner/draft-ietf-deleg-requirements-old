@@ -164,6 +164,9 @@ Table of Contents
       take the same amount of time (eg, controlled by a DNS TTL) and
       allow a smooth transition between different operational platforms.
 
+   *  DELEG must allow multiple independent operators to simultaneously
+      serve a zone.
+
 3.2.  Soft Requirements
 
    The following items are the aspirational goals for this work,
