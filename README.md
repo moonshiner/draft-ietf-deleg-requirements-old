@@ -1,10 +1,10 @@
-# TODO - Your title
+# Problem Statement and Requirements for an Improved DNS Delegation Mechanism
 
-This is the working area for the individual Internet-Draft, "TODO - Your title".
+This is the working area for the individual Internet-Draft, "Problem Statement and Requirements for an Improved DNS Delegation Mechanism".
 
-* [Editor's Copy](https://moonshiner.github.io/draft-wirelela-deleg-requirements/#go.draft-todo-yourname-protocol.html)
-* [Datatracker Page](https://datatracker.ietf.org/doc/draft-todo-yourname-protocol)
-* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-todo-yourname-protocol)
+* [Editor's Copy](https://moonshiner.github.io/draft-wirelela-deleg-requirements/)
+* [Datatracker Page](https://datatracker.ietf.org/doc/draft-wirelela-deleg-requirements/)
+* [Individual Draft](https://datatracker.ietf.org/doc/html/draft-wirelela-deleg-requirements/))
 * [Compare Editor's Copy to Individual Draft](https://moonshiner.github.io/draft-wirelela-deleg-requirements/#go.draft-todo-yourname-protocol.diff)
 
 
