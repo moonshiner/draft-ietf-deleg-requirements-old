@@ -120,7 +120,7 @@ The following items are the aspirational goals for this work, describing the fea
 * DELEG should minimize transaction cost in its usage.  This includes, but is not limited to, packet count, packet volume, and the amount of time it takes to resolve a query.
 
 
-* DELEG should enable a DNS operator to manage DNS service more completely on behalf of registrants.  For example, DELEG could address long-standing issues of DNSSEC record maintenance that now often depend on registrant/registrar interaction.  Similarly, DELEG could allow new transports to be deployed by an operator without necessitating that delegation information be modified by the registrant.
+* DELEG should enable a DNS operator to manage DNS service more completely on behalf of domain administrators. For example, DELEG could address long-standing issues of DNSSEC record maintenance that now often depend on registrant / registrar interaction. Similarly, DELEG could allow new transports to be deployed by an operator or nameserver names to be changed, without necessitating that delegation information be modified by the domain administrator.
 
 
 * DELEG should allow for backward compatibility to the conventional NS-based delegation mechanism.  That is, a Zone Operator who wants to maintain a single source of truth of delegation information using DELEG should be able to easily have Do53 delegations derived from it.
