@@ -104,6 +104,7 @@ The following strictures are necessary in a new delegation design.
 
 * DELEG must support updates to delegation information with the same relative ease as currently exists with NS records.   Changes should take the same amount of time (eg, controlled by a DNS TTL) and allow a smooth transition between different operational platforms.
 
+* DELEG must allow multiple independent operators to simultaneously serve a zone.
 
 ## Soft Requirements
 
