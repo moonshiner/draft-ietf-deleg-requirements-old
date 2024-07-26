@@ -167,6 +167,9 @@ Table of Contents
    *  DELEG must be incrementally deployable and not require any sort of
       flag day of universal change to be effective.
 
+   *  DELEG must allow multiple independent operators to simultaneously
+      serve a zone.
+
 3.2.  Soft Requirements
 
    The following items are the aspirational goals for this work,
