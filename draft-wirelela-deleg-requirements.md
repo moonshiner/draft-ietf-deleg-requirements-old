@@ -107,6 +107,8 @@ The following strictures are necessary in a new delegation design.
 
 * DELEG must be incrementally deployable and not require any sort of flag day of universal change to be effective.
 
+* DELEG must allow multiple independent operators to simultaneously serve a zone.
+
 ## Soft Requirements
 
 
