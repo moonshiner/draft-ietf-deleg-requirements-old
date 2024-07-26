@@ -5,11 +5,11 @@
 DELEG Working Group                                          D. Lawrence
 Internet-Draft                                                Salesforce
 Intended status: Informational                                  E. Lewis
-Expires: 13 January 2025                                                
+Expires: 27 January 2025                                                
                                                                  J. Reid
                                                                         
                                                              T. Wicinski
-                                                            12 July 2024
+                                                            26 July 2024
 
 
    Problem Statement and Requirements for an Improved DNS Delegation
@@ -41,7 +41,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 13 January 2025.
+   This Internet-Draft will expire on 27 January 2025.
 
 Copyright Notice
 
@@ -66,9 +66,7 @@ Table of Contents
      3.2.  Soft Requirements
    4.  IANA Considerations
    5.  Security Considerations
-   6.  References
-     6.1.  Normative References
-     6.2.  Informative References
+   6.  Informative References
    Acknowledgements
    Authors' Addresses
 
@@ -96,12 +94,6 @@ Table of Contents
    a solution.
 
 2.  Terminology
-
-   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
-   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
-   "OPTIONAL" in this document are to be interpreted as described in
-   BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
-   capitals, as shown here.
 
    This document assumes familiarity with DNS terms as defined in
    [BCP219].  Additionally, the following new terms are introduced:
@@ -181,7 +173,7 @@ Table of Contents
    transport mechanisms.
 
    *  DELEG should make clear all of the necessary details for
-      contacting a Service Access Point its protocol, port, and any
+      contacting a Service Access Point -- its protocol, port, and any
       other data that would be required to initiate a DNS query.
 
    *  DELEG should minimize transaction cost in its usage.  This
@@ -222,20 +214,7 @@ Table of Contents
    Internet.  This section will be made more robust in future drafts.
    Contributions welcome.
 
-6.  References
-
-6.1.  Normative References
-
-   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
-              Requirement Levels", BCP 14, RFC 2119,
-              DOI 10.17487/RFC2119, March 1997,
-              <https://www.rfc-editor.org/rfc/rfc2119>.
-
-   [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
-              2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
-              May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
-
-6.2.  Informative References
+6.  Informative References
 
    [STD13]    Internet Standard 13,
               <https://www.rfc-editor.org/info/std13>.
