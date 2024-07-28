@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-25T00:16:37.017896+00:00",
+  "timestamp": "2024-07-28T00:19:04.290775+00:00",
   "repo": "moonshiner/draft-wirelela-deleg-requirements",
   "labels": [
     {
@@ -55,15 +55,15 @@
       "id": "I_kwDOMVhQTs6PZ1pe",
       "title": "\"backward compatibility to the conventional NS-based delegation \"",
       "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/1",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "moonshiner",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "*  DELEG should allow for backward compatibility to the conventional NS-based delegation mechanism. \r\n\r\nI believe that should be a hard requirement. In fact, I think it should be the first hard requirement.",
       "createdAt": "2024-07-12T16:00:26Z",
-      "updatedAt": "2024-07-22T20:57:20Z",
-      "closedAt": null,
+      "updatedAt": "2024-07-26T05:18:30Z",
+      "closedAt": "2024-07-26T05:18:12Z",
       "comments": [
         {
           "author": "moonshiner",
@@ -78,6 +78,13 @@
           "body": "Between the wording proposed for the hard requirement in Issue #2 (or something similar) and the rest of that bullet item saying that this soft requirement was about being able to derive NS records from DELEG information, I think this is covered.",
           "createdAt": "2024-07-22T20:56:42Z",
           "updatedAt": "2024-07-22T20:56:42Z"
+        },
+        {
+          "author": "vttale",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Addressed in 6bbb063216c0f1e7a4c827256489be95610f1ea3",
+          "createdAt": "2024-07-26T05:18:12Z",
+          "updatedAt": "2024-07-26T05:18:30Z"
         }
       ]
     },
@@ -86,15 +93,15 @@
       "id": "I_kwDOMVhQTs6PaN2p",
       "title": "\"current namespace semantics\"",
       "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/2",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "moonshiner",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "  Perhaps a hard requirement of:\r\n\r\nThe nameserver (NS) record type will continue to define the delegation of authority between a parent zone and a child zone with the existing semantics.\r\n\r\nand a soft of\r\n\r\nDELEG may enhance existing namespace semantics, but only in ways that are backward compatible.\r\n",
       "createdAt": "2024-07-12T17:11:36Z",
-      "updatedAt": "2024-07-22T20:53:31Z",
-      "closedAt": null,
+      "updatedAt": "2024-07-26T05:17:41Z",
+      "closedAt": "2024-07-26T05:17:41Z",
       "comments": [
         {
           "author": "vttale",
@@ -102,6 +109,13 @@
           "body": "\r\nProposed:\r\nDELEG must be backwards compatible with the existing ecosystem. Legacy zone data must function identically with both DELEG-aware and DELEG-unaware software. Nameserver(NS)records will continue to define the delegation of authority between a parent zone and a child zone exactly as they have.\r\n",
           "createdAt": "2024-07-22T20:53:30Z",
           "updatedAt": "2024-07-22T20:53:30Z"
+        },
+        {
+          "author": "vttale",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Addressed in 6bbb063216c0f1e7a4c827256489be95610f1ea3",
+          "createdAt": "2024-07-26T05:17:41Z",
+          "updatedAt": "2024-07-26T05:17:41Z"
         }
       ]
     },
@@ -110,15 +124,15 @@
       "id": "I_kwDOMVhQTs6Qdo64",
       "title": "Must support multiple operators",
       "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/3",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "moonshiner",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "\r\n\r\nThis may be a hard requirement that it must be possible to transition a domain between domain operators.\r\n\r\nThis may be a soft requirement to allow multiple simultaneous operators for a domain (eg, think what drives multi-provider DNSSEC as well as large enterprises that require vendor diversity for their authoritative zones).\r\n\r\n",
       "createdAt": "2024-07-22T20:11:46Z",
-      "updatedAt": "2024-07-22T20:52:18Z",
-      "closedAt": null,
+      "updatedAt": "2024-07-26T16:27:51Z",
+      "closedAt": "2024-07-26T16:27:51Z",
       "comments": [
         {
           "author": "enygren",
@@ -126,6 +140,13 @@
           "body": "It sounds like this a single new hard requirement should be added here, along the lines of:\r\n\r\n* DELEG MUST enable a zone to simultaneously have multiple independent operators.\r\n\r\n(wordsmithing is most welcome)",
           "createdAt": "2024-07-22T20:23:04Z",
           "updatedAt": "2024-07-22T20:23:04Z"
+        },
+        {
+          "author": "vttale",
+          "authorAssociation": "COLLABORATOR",
+          "body": "I also wanted to say something like \"DELEG must not make it harder to switch operators\" but I don't think we can actually say something like that.  To the extent that a zone is using deleg with an operator that supports it, it would have an impact on their options for other operators.",
+          "createdAt": "2024-07-26T06:10:01Z",
+          "updatedAt": "2024-07-26T06:10:01Z"
         }
       ]
     },
@@ -134,15 +155,15 @@
       "id": "I_kwDOMVhQTs6Qd6fY",
       "title": "\"enable a DNS operator to manage DNS service more completely on behalf of registrants\"",
       "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/4",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "vttale",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Discussion in the chat during the deleg meeting suggested that maybe this was a little too meta about just what was meant, but it also wasn't clear that the actual content of the document was being replied to.  But maybe add another phrase at also being able to support operators being able to update the names of nameserver targets.\r\n",
       "createdAt": "2024-07-22T20:59:09Z",
-      "updatedAt": "2024-07-22T23:44:56Z",
-      "closedAt": null,
+      "updatedAt": "2024-07-26T05:16:53Z",
+      "closedAt": "2024-07-26T05:13:54Z",
       "comments": [
         {
           "author": "vttale",
@@ -185,6 +206,13 @@
           "body": "This comes from soft requirements because it is attempting to solve one of the existing problems.  It isn't a regression to not address it; it is the status quo to not address it.  (This is separate from the multiple operators issue, which is a hard requirement and would be a regression.)",
           "createdAt": "2024-07-22T23:44:55Z",
           "updatedAt": "2024-07-22T23:44:55Z"
+        },
+        {
+          "author": "vttale",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Addressed in 71ec5c000efcec8cae28c70d003b24b0dbc385d5",
+          "createdAt": "2024-07-26T05:16:52Z",
+          "updatedAt": "2024-07-26T05:16:52Z"
         }
       ]
     },
@@ -193,15 +221,15 @@
       "id": "I_kwDOMVhQTs6QeFDe",
       "title": "address deployability",
       "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/5",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "vttale",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "At the meeting, some text on deployability was desired.  Especially to not require any sort of flag day.",
       "createdAt": "2024-07-22T21:30:51Z",
-      "updatedAt": "2024-07-22T21:30:51Z",
-      "closedAt": null,
+      "updatedAt": "2024-07-26T21:49:40Z",
+      "closedAt": "2024-07-26T21:49:40Z",
       "comments": []
     },
     {
@@ -221,5 +249,166 @@
       "comments": []
     }
   ],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 7,
+      "id": "PR_kwDOMVhQTs52h9dh",
+      "title": "Address Issue 2 \"existing semantics\"",
+      "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/pull/7",
+      "state": "MERGED",
+      "author": "vttale",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "List discussion indicated that \"must not change existing semantics\" phrasing was ambiguous.  Clarify that it means that existing delegations would continue to work the same way.",
+      "createdAt": "2024-07-26T02:30:19Z",
+      "updatedAt": "2024-07-26T05:11:43Z",
+      "baseRepository": "moonshiner/draft-wirelela-deleg-requirements",
+      "baseRefName": "main",
+      "baseRefOid": "83aa9cc401948e80462cffc9f33e96866c14ca97",
+      "headRepository": "moonshiner/draft-wirelela-deleg-requirements",
+      "headRefName": "issue-2-existing-semantics",
+      "headRefOid": "3c02bcad288a62d92972624699db2efba88cc37c",
+      "closedAt": "2024-07-26T05:11:33Z",
+      "mergedAt": "2024-07-26T05:11:33Z",
+      "mergedBy": "vttale",
+      "mergeCommit": {
+        "oid": "6bbb063216c0f1e7a4c827256489be95610f1ea3"
+      },
+      "comments": [
+        {
+          "author": "moonshiner",
+          "authorAssociation": "OWNER",
+          "body": "This looks good ",
+          "createdAt": "2024-07-26T03:19:17Z",
+          "updatedAt": "2024-07-26T03:19:17Z"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "number": 8,
+      "id": "PR_kwDOMVhQTs52h_wB",
+      "title": "Issue 4: facilitate enhanced domain operations",
+      "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/pull/8",
+      "state": "MERGED",
+      "author": "vttale",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Use the phrase \"domain administrators\" as a general term not specific to registrants, while still using registrants in the context of the current ICANN RRR model issue.  Add renaming nameservers as another example.",
+      "createdAt": "2024-07-26T02:44:38Z",
+      "updatedAt": "2024-07-26T05:13:14Z",
+      "baseRepository": "moonshiner/draft-wirelela-deleg-requirements",
+      "baseRefName": "main",
+      "baseRefOid": "83aa9cc401948e80462cffc9f33e96866c14ca97",
+      "headRepository": "moonshiner/draft-wirelela-deleg-requirements",
+      "headRefName": "issue-4-enhanced-operations",
+      "headRefOid": "ce5a5cd9c33a81fa12986427e19dcf4bd159ed82",
+      "closedAt": "2024-07-26T05:10:52Z",
+      "mergedAt": "2024-07-26T05:10:52Z",
+      "mergedBy": "vttale",
+      "mergeCommit": {
+        "oid": "71ec5c000efcec8cae28c70d003b24b0dbc385d5"
+      },
+      "comments": [
+        {
+          "author": "moonshiner",
+          "authorAssociation": "OWNER",
+          "body": "this looks good also ",
+          "createdAt": "2024-07-26T03:19:45Z",
+          "updatedAt": "2024-07-26T03:19:45Z"
+        }
+      ],
+      "reviews": []
+    },
+    {
+      "number": 9,
+      "id": "PR_kwDOMVhQTs52ildM",
+      "title": "DELEG must allow multiple independent operators",
+      "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/pull/9",
+      "state": "MERGED",
+      "author": "vttale",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [
+        "vttale"
+      ],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-07-26T05:55:04Z",
+      "updatedAt": "2024-07-26T21:50:41Z",
+      "baseRepository": "moonshiner/draft-wirelela-deleg-requirements",
+      "baseRefName": "main",
+      "baseRefOid": "532b6628ce6c0ce48981b01c11a2530a00584967",
+      "headRepository": "moonshiner/draft-wirelela-deleg-requirements",
+      "headRefName": "3-must-support-multiple-operators",
+      "headRefOid": "6ef6891ac96e398bccaa99ba9475139b39b8798b",
+      "closedAt": "2024-07-26T16:27:50Z",
+      "mergedAt": "2024-07-26T16:27:50Z",
+      "mergedBy": "moonshiner",
+      "mergeCommit": {
+        "oid": "76a8929db7d0e260c8b184888df92667bad9a8ce"
+      },
+      "comments": [
+        {
+          "author": "moonshiner",
+          "authorAssociation": "OWNER",
+          "body": "Looks good. ",
+          "createdAt": "2024-07-26T16:26:53Z",
+          "updatedAt": "2024-07-26T16:26:53Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOMVhQTs6DQ67E",
+          "commit": {
+            "abbreviatedOid": "6ef6891"
+          },
+          "author": "moonshiner",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "LGTM",
+          "createdAt": "2024-07-26T16:27:03Z",
+          "updatedAt": "2024-07-26T16:27:03Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "id": "PR_kwDOMVhQTs52iwqX",
+      "title": "Incrementally deployable and no flag day.",
+      "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/pull/10",
+      "state": "MERGED",
+      "author": "vttale",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "DELEG must be incrementally deployable and not require any sort of flag day of universal change to be effective.",
+      "createdAt": "2024-07-26T06:36:19Z",
+      "updatedAt": "2024-07-26T21:49:47Z",
+      "baseRepository": "moonshiner/draft-wirelela-deleg-requirements",
+      "baseRefName": "main",
+      "baseRefOid": "76a8929db7d0e260c8b184888df92667bad9a8ce",
+      "headRepository": "moonshiner/draft-wirelela-deleg-requirements",
+      "headRefName": "5-address-deployability",
+      "headRefOid": "bf22aa71e20a2ed5d8d52ade90ebf2845bd8f722",
+      "closedAt": "2024-07-26T21:49:39Z",
+      "mergedAt": "2024-07-26T21:49:39Z",
+      "mergedBy": "vttale",
+      "mergeCommit": {
+        "oid": "62be134be32811b2694bd3cdeb5e903fb73e476e"
+      },
+      "comments": [
+        {
+          "author": "moonshiner",
+          "authorAssociation": "OWNER",
+          "body": "Agreed - no flag day",
+          "createdAt": "2024-07-26T16:27:38Z",
+          "updatedAt": "2024-07-26T16:27:38Z"
+        }
+      ],
+      "reviews": []
+    }
+  ]
 }
