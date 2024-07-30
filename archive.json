@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-28T00:19:04.290775+00:00",
+  "timestamp": "2024-07-30T00:17:11.468425+00:00",
   "repo": "moonshiner/draft-wirelela-deleg-requirements",
   "labels": [
     {
@@ -244,9 +244,24 @@
       "labels": [],
       "body": "Maybe we need a section on \"not a requirement\" that this be addressed; that current work cannot really address whether future NS use is either mandatory not intended to be obsoleted",
       "createdAt": "2024-07-22T21:32:37Z",
-      "updatedAt": "2024-07-22T21:32:37Z",
+      "updatedAt": "2024-07-29T22:29:17Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "moonshiner",
+          "authorAssociation": "OWNER",
+          "body": "can we define deleg requirements mentioning NS or DS records ? \r\n(or orthogonal)",
+          "createdAt": "2024-07-29T19:39:50Z",
+          "updatedAt": "2024-07-29T19:39:50Z"
+        },
+        {
+          "author": "moonshiner",
+          "authorAssociation": "OWNER",
+          "body": "paulh \"the addition of DELEG records does not change that\".",
+          "createdAt": "2024-07-29T22:29:15Z",
+          "updatedAt": "2024-07-29T22:29:15Z"
+        }
+      ]
     }
   ],
   "pulls": [
