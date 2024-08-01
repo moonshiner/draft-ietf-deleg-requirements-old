@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-30T00:17:11.468425+00:00",
+  "timestamp": "2024-08-01T00:19:00.534887+00:00",
   "repo": "moonshiner/draft-wirelela-deleg-requirements",
   "labels": [
     {
@@ -260,6 +260,30 @@
           "body": "paulh \"the addition of DELEG records does not change that\".",
           "createdAt": "2024-07-29T22:29:15Z",
           "updatedAt": "2024-07-29T22:29:15Z"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "id": "I_kwDOMVhQTs6RPMpB",
+      "title": "We have Hard and Soft Requirements for backward compatability",
+      "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/11",
+      "state": "OPEN",
+      "author": "moonshiner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Hard \r\n\r\n\r\n   *  DELEG must be backwards compatible with the existing ecosystem.\r\n      Legacy zone data must function identically with both DELEG-aware\r\n      and DELEG-unaware software.  Nameserver (NS) records will continue\r\n      to define the delegation of authority between a parent zone and a\r\n      child zone exactly as they have.\r\n\r\nSoft:\r\n\r\n   *  DELEG should allow for backward compatibility to the conventional\r\n      NS-based delegation mechanism.  That is, a Zone Operator who wants\r\n      to maintain a single source of truth of delegation information\r\n      using DELEG should be able to easily have Do53 delegations derived\r\n      from it.\r\n",
+      "createdAt": "2024-07-30T01:14:03Z",
+      "updatedAt": "2024-07-30T01:19:35Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "moonshiner",
+          "authorAssociation": "OWNER",
+          "body": "I think it is fine to have both but we wordsmithed the hard requirement and we should they don't overlap./ ",
+          "createdAt": "2024-07-30T01:19:34Z",
+          "updatedAt": "2024-07-30T01:19:34Z"
         }
       ]
     }
