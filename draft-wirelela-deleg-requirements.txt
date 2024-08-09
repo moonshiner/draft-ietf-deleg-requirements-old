@@ -116,12 +116,12 @@ Table of Contents
    The requirements constraining any proposed changes to DNS delegations
    fall broadly into two categories.
 
-   "Hard requirements" are those that must be followed by a successful
+   "Hard Requirements" are those that must be followed by a successful
    protocol [RFC5218], because violating them would present too much of
    an obstacle for broad adoption.  These will primarily be related to
    the way the existing Domain Name System functions at all levels.
 
-   "Soft requirements" are those that are desirable, but the absence of
+   "Soft Requirements" are those that are desirable, but the absence of
    which does not intrinsically eliminate a design.  These will largely
    be descriptive of the problems that are trying to be addressed with a
    new method, or features that would ease adoption.
