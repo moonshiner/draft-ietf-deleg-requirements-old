@@ -113,6 +113,8 @@ The following strictures are necessary in a new delegation design.
 
 
 The following items are the aspirational goals for this work, describing the features that are desired beyond what current NS-based delegations provide.
+
+
 * DELEG should facilitate the use of new DNS transport mechanisms, including those already defined by DNS-over-TLS (DoT {{?RFC7858}}), DNS-over-HTTPS (DoH {{?RFC8484}}), and DNS-over-QUIC (DoQ {{?RFC9520}}).  It should easily allow the adoption of new transport mechanisms.
 
 
