@@ -5,11 +5,11 @@
 DELEG Working Group                                          D. Lawrence
 Internet-Draft                                                Salesforce
 Intended status: Informational                                  E. Lewis
-Expires: 28 January 2025                                                
+Expires: 10 February 2025                                               
                                                                  J. Reid
                                                                         
                                                              T. Wicinski
-                                                            27 July 2024
+                                                           9 August 2024
 
 
    Problem Statement and Requirements for an Improved DNS Delegation
@@ -41,7 +41,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 28 January 2025.
+   This Internet-Draft will expire on 10 February 2025.
 
 Copyright Notice
 
@@ -217,8 +217,6 @@ Table of Contents
 
    *  Whether information for a new delegation mechanism is stored in at
       the zone name or elsewhere in the domain name hierarchy.
-
-   *  [I had a third thing I'm still tryng to recall -- tale]
 
 4.  IANA Considerations
 
