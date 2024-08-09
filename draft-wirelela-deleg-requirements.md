@@ -137,8 +137,6 @@ Several potential areas of requirement have been raised that are being explicitl
 
 * Whether information for a new delegation mechanism is stored in at the zone name or elsewhere in the domain name hierarchy.
 
-* [I had a third thing I'm still tryng to recall -- tale]
-
 # IANA Considerations {#IANA}
 
 
