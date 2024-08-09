@@ -5,12 +5,12 @@
 DELEG Working Group                                          D. Lawrence
 Internet-Draft                                                Salesforce
 Intended status: Informational                                  E. Lewis
-Expires: 27 January 2025                                                
+Expires: 10 February 2025                                               
                                                                  J. Reid
                                                                         
                                                              T. Wicinski
                                                       Cox Communications
-                                                            26 July 2024
+                                                           9 August 2024
 
 
    Problem Statement and Requirements for an Improved DNS Delegation
@@ -42,7 +42,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 27 January 2025.
+   This Internet-Draft will expire on 10 February 2025.
 
 Copyright Notice
 
@@ -174,11 +174,12 @@ Table of Contents
 
    The following items are the aspirational goals for this work,
    describing the features that are desired beyond what current NS-based
-   delegations provide. * DELEG should facilitate the use of new DNS
-   transport mechanisms, including those already defined by DNS-over-TLS
-   (DoT [RFC7858]), DNS-over-HTTPS (DoH [RFC8484]), and DNS-over-QUIC
-   (DoQ [RFC9520]).  It should easily allow the adoption of new
-   transport mechanisms.
+   delegations provide.
+
+   *  DELEG should facilitate the use of new DNS transport mechanisms,
+      including those already defined by DNS-over-TLS (DoT [RFC7858]),
+      DNS-over-HTTPS (DoH [RFC8484]), and DNS-over-QUIC (DoQ [RFC9520]).
+      It should easily allow the adoption of new transport mechanisms.
 
    *  DELEG should make clear all of the necessary details for
       contacting a Service Access Point -- its protocol, port, and any
