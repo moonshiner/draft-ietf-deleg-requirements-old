@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-08-08T00:17:00.835863+00:00",
+  "timestamp": "2024-08-11T00:19:06.043653+00:00",
   "repo": "moonshiner/draft-wirelela-deleg-requirements",
   "labels": [
     {
@@ -447,6 +447,32 @@
           "updatedAt": "2024-07-26T16:27:38Z"
         }
       ],
+      "reviews": []
+    },
+    {
+      "number": 12,
+      "id": "PR_kwDOMVhQTs539VBz",
+      "title": "not requirements",
+      "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/pull/12",
+      "state": "OPEN",
+      "author": "moonshiner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Two non-requirements added, the future of NS and where deleg information is placed.\r\n\r\nPlaceholder for one more that is escaping me at the moment.",
+      "createdAt": "2024-08-09T14:52:53Z",
+      "updatedAt": "2024-08-09T14:53:25Z",
+      "baseRepository": "moonshiner/draft-wirelela-deleg-requirements",
+      "baseRefName": "main",
+      "baseRefOid": "f30688f43713453c69add3734292145d83ff0375",
+      "headRepository": "moonshiner/draft-wirelela-deleg-requirements",
+      "headRefName": "6-will-ns-be-forever-required",
+      "headRefOid": "c679273c2f72f8a88d194ffd55abb9c415f772df",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
       "reviews": []
     }
   ]
