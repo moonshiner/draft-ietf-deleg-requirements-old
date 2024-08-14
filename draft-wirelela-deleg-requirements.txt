@@ -5,12 +5,12 @@
 DELEG Working Group                                          D. Lawrence
 Internet-Draft                                                Salesforce
 Intended status: Informational                                  E. Lewis
-Expires: 10 February 2025                                               
+Expires: 15 February 2025                                               
                                                                  J. Reid
                                                                         
                                                              T. Wicinski
                                                       Cox Communications
-                                                           9 August 2024
+                                                          14 August 2024
 
 
    Problem Statement and Requirements for an Improved DNS Delegation
@@ -42,7 +42,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 10 February 2025.
+   This Internet-Draft will expire on 15 February 2025.
 
 Copyright Notice
 
@@ -65,6 +65,7 @@ Table of Contents
    3.  Requirements Framework
      3.1.  Hard Requirements
      3.2.  Soft Requirements
+     3.3.  Non-Requirements
    4.  IANA Considerations
    5.  Security Considerations
    6.  Informative References
@@ -212,6 +213,18 @@ Table of Contents
    *  DELEG should support an in-band means for the child to signal to
       the parent that parent-side records related to the child should be
       updated, akin to CDS/CDNSKEY [RFC8078].
+
+3.3.  Non-Requirements
+
+   Several potential areas of requirement have been raised that are
+   being explicitly acknowledged here as not being in the scope of this
+   higher level document.
+
+   *  Whether NS records must continue to be the primary means by which
+      resolutions happen or eventually fade in relevance.
+
+   *  Whether information for a new delegation mechanism is stored in at
+      the zone name or elsewhere in the domain name hierarchy.
 
 4.  IANA Considerations
 
