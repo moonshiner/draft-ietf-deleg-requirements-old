@@ -135,6 +135,13 @@ The following items are the aspirational goals for this work, describing the fea
 
 * DELEG should support an in-band means for the child to signal to the parent that parent-side records related to the child should be updated, akin to CDS/CDNSKEY {{?RFC8078}}.
 
+## Non-Requirements
+
+Several potential areas of requirement have been raised that are being explicitly acknowledged here as not being in the scope of this higher level document.
+
+* Whether NS records must continue to be the primary means by which resolutions happen or eventually fade in relevance.
+
+* Whether information for a new delegation mechanism is stored in at the zone name or elsewhere in the domain name hierarchy.
 
 # IANA Considerations {#IANA}
 
