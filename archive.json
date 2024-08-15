@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-08-13T00:17:53.331210+00:00",
+  "timestamp": "2024-08-15T00:16:50.549465+00:00",
   "repo": "moonshiner/draft-wirelela-deleg-requirements",
   "labels": [
     {
@@ -237,15 +237,15 @@
       "id": "I_kwDOMVhQTs6QeFnQ",
       "title": "will NS be forever required or aim to be eventually dead",
       "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/6",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "vttale",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Maybe we need a section on \"not a requirement\" that this be addressed; that current work cannot really address whether future NS use is either mandatory not intended to be obsoleted",
       "createdAt": "2024-07-22T21:32:37Z",
-      "updatedAt": "2024-07-29T22:29:17Z",
-      "closedAt": null,
+      "updatedAt": "2024-08-14T18:47:59Z",
+      "closedAt": "2024-08-14T18:47:59Z",
       "comments": [
         {
           "author": "moonshiner",
@@ -454,24 +454,26 @@
       "id": "PR_kwDOMVhQTs539VBz",
       "title": "not requirements",
       "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/pull/12",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "moonshiner",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "Two non-requirements added, the future of NS and where deleg information is placed.\r\n\r\nPlaceholder for one more that is escaping me at the moment.",
       "createdAt": "2024-08-09T14:52:53Z",
-      "updatedAt": "2024-08-09T14:53:25Z",
+      "updatedAt": "2024-08-14T18:47:58Z",
       "baseRepository": "moonshiner/draft-wirelela-deleg-requirements",
       "baseRefName": "main",
       "baseRefOid": "f30688f43713453c69add3734292145d83ff0375",
       "headRepository": "moonshiner/draft-wirelela-deleg-requirements",
       "headRefName": "6-will-ns-be-forever-required",
       "headRefOid": "c679273c2f72f8a88d194ffd55abb9c415f772df",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-08-14T18:47:58Z",
+      "mergedAt": "2024-08-14T18:47:58Z",
+      "mergedBy": "moonshiner",
+      "mergeCommit": {
+        "oid": "07fcb10cd65222129a54c7c375bb88ad937502d6"
+      },
       "comments": [],
       "reviews": []
     }
