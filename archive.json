@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-08-15T00:16:50.549465+00:00",
+  "timestamp": "2024-08-18T00:18:46.674278+00:00",
   "repo": "moonshiner/draft-wirelela-deleg-requirements",
   "labels": [
     {
@@ -286,6 +286,22 @@
           "updatedAt": "2024-07-30T01:19:34Z"
         }
       ]
+    },
+    {
+      "number": 13,
+      "id": "I_kwDOMVhQTs6TTiRZ",
+      "title": "Address issue with client-side update",
+      "url": "https://github.com/moonshiner/draft-wirelela-deleg-requirements/issues/13",
+      "state": "OPEN",
+      "author": "moonshiner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Does seem to be addressed independently\r\n\r\nper WG discussion ",
+      "createdAt": "2024-08-17T06:16:53Z",
+      "updatedAt": "2024-08-17T06:16:53Z",
+      "closedAt": null,
+      "comments": []
     }
   ],
   "pulls": [
